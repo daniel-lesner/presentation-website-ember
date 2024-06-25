@@ -1,20 +1,20 @@
 .contact-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .contact-item i {
-    margin-right: 15px;
-    font-size: 36px;
+  margin-right: 15px;
+  font-size: 36px;
 }
 
 .contact-item a {
-    text-decoration: none;
-    color: #333;
-    font-size: 24px;
+  text-decoration: none;
+  color: #333;
+  font-size: 24px;
 }
 
 .contact-item a:hover {
-    color: #007bff;
+  color: #007bff;
 }
