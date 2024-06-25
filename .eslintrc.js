@@ -13,7 +13,7 @@ module.exports = {
       ],
     },
   },
-  plugins: ['ember'],
+  plugins: ['ember', 'css-modules', 'prettier'],
   extends: [
     'eslint:recommended',
     'plugin:ember/recommended',
@@ -45,7 +45,12 @@ module.exports = {
         browser: false,
         node: true,
       },
-      extends: ['plugin:n/recommended'],
+      extends: [
+        'plugin:n/recommended',
+        'eslint:recommended',
+        'plugin:css-modules/recommended',
+        'prettier',
+      ],
     },
     {
       // test files

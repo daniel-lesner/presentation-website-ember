@@ -1,0 +1,77 @@
+.intro-container {
+  padding: 10% 0;
+  display: ruby-text;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro-card {
+  width: 80%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.intro-content {
+  padding: 20px;
+}
+
+.intro-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.intro-description {
+  font-size: 1rem;
+  color: #666;
+}
+
+.card-skills,
+.card-languages {
+  list-style-type: none;
+  padding: 0;
+}
+
+.card-skills li,
+.card-languages li {
+  margin-bottom: 5px;
+}
+
+.intro-job-title {
+  font-weight: bold;
+}
+
+.intro-company,
+.intro-duration,
+.intro-location,
+.intro-job-description,
+.intro-stack {
+  margin-bottom: 5px;
+}
+
+.download-cv-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  margin: auto;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.download-cv-button .bi {
+  margin-right: 8px;
+}
+
+.download-cv-button:hover {
+  background-color: #0056b3;
+}
+
+.download-cv-button strong {
+  font-weight: bold;
+}

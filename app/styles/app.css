@@ -1,1 +1,47 @@
 /* Ember supports plain CSS out of the box. More info: https://cli.emberjs.com/release/advanced-use/stylesheets/ */
+
+@import "sidebar.css";
+@import "contact.css";
+@import "experience.css";
+@import "index.css";
+@import "projects.css";
+
+@import "contact-info.css";
+
+html {
+  background-color: rgb(233, 250, 230, 0.2);
+}
+
+.main-content {
+  flex: 1;
+  margin-left: 250px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: rgb(234, 234, 234, 0.2);
+}
+
+.mobile-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+.top-section {
+  margin-top: 20px;
+}
+
+.top-section,
+.bottom-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.middle-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

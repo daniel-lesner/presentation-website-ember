@@ -1,0 +1,42 @@
+.content-container {
+  padding: 4% 0;
+  display: ruby-text;
+}
+
+.item-card {
+  width: 80%;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.card-institution {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.card-location {
+  font-size: 1.1em;
+  color: #666;
+  margin-bottom: 35px;
+  font-style: italic;
+}
+
+.card-date {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: #333;
+}

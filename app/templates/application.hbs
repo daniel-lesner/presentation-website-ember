@@ -1,7 +1,30 @@
-{{page-title "PresentationWebsiteEmber"}}
+{{page-title "Daniel Lesner"}}
 
-{{! The following component displays Ember's default welcome message. }}
-<WelcomePage />
-{{! Feel free to remove this! }}
+{{#if this.isMobile}}
+  <div class="mobile-container">
+    <div class="top-section">
+      <img src="/images/favicon.ico" alt="Icon" width="240" height="240" />
+    </div>
+    <div class="middle-section">
+      <ContactInfo />
+    </div>
+    <div class="bottom-section">
+      <a
+        href="/documents/Daniel-Lesner_Curriculum-Vitae.pdf"
+        download
+        class="download-cv-button"
+      >
+        <i class="bi bi-download fs-4 align-middle mr-2"></i>Download CV
+      </a>
+    </div>
+  </div>
+{{else}}
 
-{{outlet}}
+  <div class="flex main">
+    <Sidebar />
+
+    <div class="main-content ml-64">
+      {{outlet}}
+    </div>
+  </div>
+{{/if}}

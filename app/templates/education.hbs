@@ -1,0 +1,15 @@
+<div class="container content-container">
+  {{#each this.educationDetails as |education|}}
+    <div class="item-card">
+      <div class="card-body">
+        <h5 class="card-title">{{education.title}}</h5>
+        <p class="card-institution">{{education.institution}}</p>
+        <p class="card-date">{{education.date}}</p>
+        <p class="card-location">{{education.location}}</p>
+        {{#each education.description as |description|}}
+          <p class="card-description">{{description}}</p>
+        {{/each}}
+      </div>
+    </div>
+  {{/each}}
+</div>

@@ -1,0 +1,24 @@
+<div class="container content-container">
+  {{#each this.workExperience as |experience|}}
+    <div class="item-card">
+      <div class="card-body">
+        <h5 class="card-title">{{experience.position}}</h5>
+        <p class="card-institution">{{experience.company}}</p>
+        <p class="card-date">{{experience.duration}}</p>
+        <p class="card-location">{{experience.location}}</p>
+        {{#each experience.description as |description|}}
+          <p class="card-description">{{description}}</p>
+        {{/each}}
+        {{#if experience.stackUsed}}
+          <p class="card-text">Stack used:
+            <b>
+              {{#each experience.stackUsed as |stack|}}
+                {{stack}}
+              {{/each}}
+            </b>
+          </p>
+        {{/if}}
+      </div>
+    </div>
+  {{/each}}
+</div>
