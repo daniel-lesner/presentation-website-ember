@@ -1,121 +1,26 @@
-{{!-- <div class="sidebar fixed h-full flex flex-col justify-between items-center">
-  <div class="sidebar-title items-center" style="display: inline-flex;">
-    <img
-      src="/images/favicon.ico"
-      alt="Icon"
-      width="140"
-      height="140"
-      style="margin-right: 8px;"
-    />
-  </div>
-
-  <nav class="sidebar-nav">
-    <LinkTo
-      @route="index"
-      class="sidebar-link"
-      @routeIs={{eq this.router.currentRouteName "index"}}
-    >
-      <i class="bi bi-house fs-4 align-middle mr-2"></i>
-      Intro
-    </LinkTo>
-    <LinkTo
-      @route="experience"
-      class="sidebar-link"
-      @routeIs={{eq this.router.currentRouteName "experience"}}
-    >
-      <i class="bi bi-laptop fs-4 align-middle mr-2"></i>
-      Experience
-    </LinkTo>
-    <LinkTo
-      @route="education"
-      class="sidebar-link"
-      @routeIs={{eq this.router.currentRouteName "education"}}
-    >
-      <i class="bi bi-pencil fs-4 align-middle mr-2"></i>
-      Education
-    </LinkTo>
-    <LinkTo
-      @route="projects"
-      class="sidebar-link"
-      @routeIs={{eq this.router.currentRouteName "projects"}}
-    >
-      <i class="bi bi-kanban fs-4 align-middle mr-2"></i>
-      Projects
-    </LinkTo>
-    <LinkTo
-      @route="contact"
-      class="sidebar-link"
-      @routeIs={{eq this.router.currentRouteName "contact"}}
-    >
-      <i class="bi bi-telephone fs-4 align-middle mr-2"></i>
-      Contact
-    </LinkTo>
-  </nav>
-
-  <a
-    href="/documents/Daniel-Lesner_Curriculum-Vitae.pdf"
-    download
-    class="download-cv-button"
-  ><i class="bi bi-download fs-4 align-middle mr-2"></i>Download CV
-  </a>
-
-  <div class="built-with items-center">
-    <h2 class="text-lg mb-2">Built With</h2>
-    <a href="https://emberjs.com/" target="_blank" rel="noopener noreferrer">
-      <img
-        src="/images/ember.png"
-        alt="Ember.js Icon"
-        width="128"
-        height="128"
-        class="mr-2 inline-block"
-      />
-    </a>
-  </div>
-</div> --}}
-
 <div class="sidebar">
   <div class="sidebar-title">
     <img src="/images/favicon.ico" alt="Icon" width="140" height="140" />
   </div>
 
   <nav class="sidebar-nav">
-    <LinkTo
-      @route="index"
-      class="sidebar-link"
-      @routeIs={{eq this.router.currentRouteName "index"}}
-    >
+    <LinkTo @route="index" class="sidebar-link">
       <i class="bi bi-house fs-4 align-middle mr-2"></i>
       Intro
     </LinkTo>
-    <LinkTo
-      @route="experience"
-      class="sidebar-link"
-      @routeIs={{eq this.router.currentRouteName "experience"}}
-    >
+    <LinkTo @route="experience" class="sidebar-link">
       <i class="bi bi-laptop fs-4 align-middle mr-2"></i>
       Experience
     </LinkTo>
-    <LinkTo
-      @route="education"
-      class="sidebar-link"
-      @routeIs={{eq this.router.currentRouteName "education"}}
-    >
+    <LinkTo @route="education" class="sidebar-link">
       <i class="bi bi-pencil fs-4 align-middle mr-2"></i>
       Education
     </LinkTo>
-    <LinkTo
-      @route="projects"
-      class="sidebar-link"
-      @routeIs={{eq this.router.currentRouteName "projects"}}
-    >
+    <LinkTo @route="projects" class="sidebar-link">
       <i class="bi bi-kanban fs-4 align-middle mr-2"></i>
       Projects
     </LinkTo>
-    <LinkTo
-      @route="contact"
-      class="sidebar-link"
-      @routeIs={{eq this.router.currentRouteName "contact"}}
-    >
+    <LinkTo @route="contact" class="sidebar-link">
       <i class="bi bi-telephone fs-4 align-middle mr-2"></i>
       Contact
     </LinkTo>
