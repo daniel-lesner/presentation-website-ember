@@ -11,11 +11,11 @@
         {{/each}}
         {{#if experience.stackUsed}}
           <p class="card-text">Stack used:
-            <b>
-              {{#each experience.stackUsed as |stack|}}
-                {{stack}}
-              {{/each}}
-            </b>
+            {{#each experience.stackUsed as |stack|}}
+              <span
+                class="badge rounded-pill bg-primary p-2 ms-2 mt-2"
+              >{{stack}}</span>
+            {{/each}}
           </p>
         {{/if}}
       </div>
