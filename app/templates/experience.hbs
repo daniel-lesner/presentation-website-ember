@@ -10,13 +10,50 @@
           <p class="card-description">{{description}}</p>
         {{/each}}
         {{#if experience.stackUsed}}
-          <p class="card-text">Stack used:
+          <p class="card-text">Stack used:</p>
+          {{#if (is-array experience.stackUsed)}}
             {{#each experience.stackUsed as |stack|}}
               <span
-                class="badge rounded-pill bg-primary p-2 ms-2 mt-2"
+                class="badge rounded-pill bg-primary p-2 ms-4 mt-3"
               >{{stack}}</span>
             {{/each}}
-          </p>
+          {{else}}
+            <div class="mt-2 ms-4">
+              Frontend:
+              {{#each experience.stackUsed.frontend as |stack|}}
+                <span
+                  class="badge rounded-pill bg-primary p-2 ms-2 mt-3"
+                >{{stack}}</span>
+              {{/each}}
+            </div>
+
+            <div class="mt-2 ms-4">
+              Backend:
+              {{#each experience.stackUsed.backend as |stack|}}
+                <span
+                  class="badge rounded-pill bg-secondary p-2 ms-2 mt-3"
+                >{{stack}}</span>
+              {{/each}}
+            </div>
+
+            <div class="mt-2 ms-4">
+              Databases:
+              {{#each experience.stackUsed.databases as |stack|}}
+                <span
+                  class="badge rounded-pill bg-success p-2 ms-2 mt-3"
+                >{{stack}}</span>
+              {{/each}}
+            </div>
+
+            <div class="mt-2 ms-4">
+              Others:
+              {{#each experience.stackUsed.others as |stack|}}
+                <span
+                  class="badge rounded-pill bg-danger p-2 ms-2 mt-3"
+                >{{stack}}</span>
+              {{/each}}
+            </div>
+          {{/if}}
         {{/if}}
       </div>
     </div>
