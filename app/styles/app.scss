@@ -1,13 +1,13 @@
 /* Ember supports plain CSS out of the box. More info: https://cli.emberjs.com/release/advanced-use/stylesheets/ */
 
-@import url("sidebar.css");
-@import url("contact.css");
-@import url("experience.css");
-@import url("index.css");
-@import url("projects.css");
+@import "sidebar";
+@import "contact";
+@import "experience";
+@import "index";
+@import "projects";
 
-@import url("header.css");
-@import url("contact-info.css");
+@import "header";
+@import "contact-info";
 
 html {
   background-color: #e9fae640;
