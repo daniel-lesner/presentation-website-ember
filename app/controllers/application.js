@@ -8,6 +8,12 @@ export default class ApplicationController extends Controller {
     height: window.innerHeight,
   };
 
+  @tracked isSidebarOpen = false;
+
+  get isMobile() {
+    return Object.values(this.windowDimensions).some((dim) => dim < 800);
+  }
+
   constructor() {
     super(...arguments);
     window.addEventListener('resize', () => this.updateWindowSize());
@@ -19,9 +25,12 @@ export default class ApplicationController extends Controller {
       width: window.innerWidth,
       height: window.innerHeight,
     };
+
+    this.isSidebarOpen = false;
   }
 
-  get isMobile() {
-    return Object.values(this.windowDimensions).some((dim) => dim < 800);
+  @action
+  toggleSidebar() {
+    this.isSidebarOpen = !this.isSidebarOpen;
   }
 }

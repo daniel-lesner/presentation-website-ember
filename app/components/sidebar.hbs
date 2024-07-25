@@ -4,23 +4,39 @@
   </div>
 
   <nav class="sidebar-nav">
-    <LinkTo @route="index" class="sidebar-link">
+    <LinkTo @route="index" class="sidebar-link" {{on "click" this.onLinkClick}}>
       <i class="bi bi-house fs-4 align-middle mr-2"></i>
       Intro
     </LinkTo>
-    <LinkTo @route="experience" class="sidebar-link">
+    <LinkTo
+      @route="experience"
+      class="sidebar-link"
+      {{on "click" this.onLinkClick}}
+    >
       <i class="bi bi-laptop fs-4 align-middle mr-2"></i>
       Experience
     </LinkTo>
-    <LinkTo @route="education" class="sidebar-link">
+    <LinkTo
+      @route="education"
+      class="sidebar-link"
+      {{on "click" this.onLinkClick}}
+    >
       <i class="bi bi-pencil fs-4 align-middle mr-2"></i>
       Education
     </LinkTo>
-    <LinkTo @route="projects" class="sidebar-link">
+    <LinkTo
+      @route="projects"
+      class="sidebar-link"
+      {{on "click" this.onLinkClick}}
+    >
       <i class="bi bi-kanban fs-4 align-middle mr-2"></i>
       Projects
     </LinkTo>
-    <LinkTo @route="contact" class="sidebar-link">
+    <LinkTo
+      @route="contact"
+      class="sidebar-link"
+      {{on "click" this.onLinkClick}}
+    >
       <i class="bi bi-telephone fs-4 align-middle mr-2"></i>
       Contact
     </LinkTo>

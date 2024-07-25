@@ -6,41 +6,62 @@
 @import url("index.css");
 @import url("projects.css");
 
+@import url("header.css");
 @import url("contact-info.css");
 
 html {
-  background-color: rgb(233 250 230 / 20%);
+  background-color: #e9fae640;
+}
+
+.main {
+  height: auto;
 }
 
 .main-content {
   flex: 1;
   margin-left: 250px;
   padding: 20px;
-  box-sizing: border-box;
-  background-color: rgb(234 234 234 / 20%);
+  background-color: #e9fae640;
 }
 
 .mobile-container {
-  display: flex;
-  flex-direction: column;
-  height: 100dvh;
-  justify-content: space-between;
+  padding-top: 60px;
+  background-color: #e9fae640;
+
+  .item-card {
+    width: auto;
+  }
+
+  .contact-info {
+    max-width: 90%;
+  }
+
+  .contact-item a {
+    font-size: 18px;
+  }
+
+  .message-card {
+    max-width: 80%;
+  }
 }
 
-.top-section {
-  margin-top: 20px;
-}
+.mobile-sidebar {
+  .sidebar {
+    top: 40px;
+    left: -100%;
+    height: calc(100% - 40px);
+    transition: left 0.3s ease;
+    padding-top: 60px;
+    z-index: 1000;
 
-.top-section,
-.bottom-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+    .sidebar-title {
+      display: none;
+    }
+  }
 
-.middle-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  &.open {
+    .sidebar {
+      left: 0;
+    }
+  }
 }

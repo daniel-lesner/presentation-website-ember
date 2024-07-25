@@ -1,30 +1,22 @@
-{{page-title "Daniel Lesner"}}
+<div class="main">
+  {{#if this.isMobile}}
+    <Header
+      @isSidebarOpen={{this.isSidebarOpen}}
+      @toggleSidebar={{this.toggleSidebar}}
+    />
 
-{{#if this.isMobile}}
-  <div class="mobile-container">
-    <div class="top-section">
-      <img src="/images/favicon.ico" alt="Icon" width="240" height="240" />
+    <div class={{if this.isSidebarOpen "mobile-sidebar open" "mobile-sidebar"}}>
+      <Sidebar @toggleSidebar={{this.toggleSidebar}} />
     </div>
-    <div class="middle-section">
-      <ContactInfo />
-    </div>
-    <div class="bottom-section">
-      <a
-        href="/documents/Daniel-Lesner_Curriculum-Vitae.pdf"
-        download
-        class="download-cv-button"
-      >
-        <i class="bi bi-download fs-4 align-middle mr-2"></i>Download CV
-      </a>
-    </div>
-  </div>
-{{else}}
 
-  <div class="flex main">
-    <Sidebar />
-
-    <div class="main-content ml-64">
+    <div class="mobile-container">
       {{outlet}}
     </div>
-  </div>
-{{/if}}
+  {{else}}
+    <Sidebar />
+
+    <div class="main-content">
+      {{outlet}}
+    </div>
+  {{/if}}
+</div>

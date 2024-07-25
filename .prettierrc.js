@@ -3,10 +3,11 @@
 module.exports = {
   overrides: [
     {
-      files: '*.{js,ts}',
+      files: '*.{js,css}',
       options: {
         singleQuote: true,
         endOfLine: 'lf',
+        printWidth: 120,
       },
     },
   ],

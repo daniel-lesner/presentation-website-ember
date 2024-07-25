@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="end">
-<head>
-  <meta charset="utf-8">
-  <title>PresentationWebsiteEmber</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <title>Daniel Lesner</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  {{content-for "head"}}
+    {{content-for "head"}}
 
-  <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
 
-  <link integrity="" rel="stylesheet" href="{{rootURL}}assets/vendor.css">
-  <link integrity="" rel="stylesheet" href="{{rootURL}}assets/presentation-website-ember.css">
+    <link integrity="" rel="stylesheet" href="{{rootURL}}assets/vendor.css" />
+    <link
+      integrity=""
+      rel="stylesheet"
+      href="{{rootURL}}assets/presentation-website-ember.css"
+    />
 
-  {{content-for "head-footer"}}
-</head>
-<body>
-  <div id="ember-bootstrap-wormhole"></div>
-  {{content-for "body"}}
+    {{content-for "head-footer"}}
+  </head>
+  <body>
+    <div id="ember-bootstrap-wormhole"></div>
+    {{content-for "body"}}
 
-  <script src="{{rootURL}}assets/vendor.js"></script>
-  <script src="{{rootURL}}assets/presentation-website-ember.js"></script>
+    <script src="{{rootURL}}assets/vendor.js"></script>
+    <script src="{{rootURL}}assets/presentation-website-ember.js"></script>
 
-  {{content-for "body-footer"}}
-</body>
+    {{content-for "body-footer"}}
+  </body>
 </html>
